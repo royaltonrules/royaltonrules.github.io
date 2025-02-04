@@ -1,3 +1,3 @@
 # royaltonrules.github.io
 
-If your part of the Royalton Public Schools administrative staff, could you just please leave my sites alone.
+If you are part of the Royalton Public Schools administrative staff, please leave my sites alone.
