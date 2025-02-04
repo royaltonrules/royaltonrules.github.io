@@ -1,72 +1,78 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Royalton Rules Links</title>
+        <title>Future of this site.</title>
         <meta charset="utf-8" />
         <meta
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
 
-        <link
+        <!-- <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
             rel="stylesheet"
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
-        />
+        /> -->
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin=""/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.2.1/font-awesome-animation.min.css" crossorigin=""/>
+        <link rel="stylesheet" href="style.css"/>
         <style>
             h1 {
                 font-size: 3rem;
                 font-weight: bold;
                 margin-top: 2rem;
             }
-            #links {
+            hr {
+                width: 75%;
+            }
+            p {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                padding: 0;
-                margin: 0;
+                padding: 20px;
+                margin: 0 15%;
                 font-size: 2rem;
+                font-weight: 500;
+                text-align: center;
+            }
+
+            header {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            main {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
             }
         </style>
     </head>
 
     <body data-bs-theme="dark">
-        <script>
-            const links = [
-                "royaltonrule.uk",
-                "royaltonrules.uk",
-                "royaltonrules.org",
-            ]
-            document.addEventListener("DOMContentLoaded", () => {
-                links.forEach((link) => {
-                    const li = document.createElement("span")
-                    li.innerHTML = `<a href="https://${link}">${link}</a>`
-                    document.querySelector("#links").appendChild(li)
-                })
-            })
-        </script>
         <header>
+            <h1>Future of this site.</h1>
+            <hr class="text-light w-75" />
         </header>
-        <main class="container-fluid d-flex flex-column align-items-center">
-            <h1>Royalton Rules Links</h1>
-            <hr class="text-light w-75">
-            <h2>&uarr; Newest | Oldest &darr;</h2>
-            <div id="links"></div>
+        <main>
+            <p>
+                We're sorry to burden you with such information, but if the site keeps getting blocked at this rate we cannot keep up. Each one of these sites cost money and as it currently stands this is the last one we can afford at the current moment. We're not asking for any money, though id be much aprieciated. There has been a lot of time put into this so, all we ask is that you to think before you flaunting.
+            </p>
+            <p style="color: aqua;">
+                Please click to copy and paste it into a new window and bookmark it if you would not like to read this again.
+            </p>
+            <button id="continue-button" disabled>Continue in -</button>
+            <br>
+            <p>
+                If the site gets blocked this page should provide the latest link, however bookmark both and <span style="background-color: maroon;">ONLY USE THIS SITE WHEN NECESSARY.</span>
+            </p>
+            <span for="rep">If the site got blocked try changing this number.</span>
+            <input type="number" name="rep" id="rep" min="0" max="20" value="0">
         </main>
-        <footer>
-        </footer>
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
-
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
+        <script src="script.js"></script>
     </body>
 </html>
